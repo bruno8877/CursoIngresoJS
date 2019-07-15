@@ -41,7 +41,9 @@ function mostrar()
         alert("Es de noche..");
         break
         
-
+        default:
+            alert("La hora ingresada es incorrecta..")
+            break
     }
 
 }
