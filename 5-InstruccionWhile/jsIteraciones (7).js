@@ -15,7 +15,7 @@ function mostrar()
 				numero = parseInt(prompt("Error, re-ingrese un numero"));
 			}
 			respuesta = prompt("Quiere continuar?(ponga si o no)");
-			while(!(respuesta == "si" && respuesta == "no"))
+			while(respuesta != "si" && respuesta != "no")
 			{
 				respuesta= prompt("Error, por favor re-ingrese si o no..")
 			}
