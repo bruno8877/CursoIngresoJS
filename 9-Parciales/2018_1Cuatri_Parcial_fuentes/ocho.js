@@ -79,7 +79,7 @@ function mostrar()
     document.write("a) La cantidad de números pares es " + contPar + "<br>" +
     "b) La cantidad de números impares " + contImpar + "<br>" +
     "c) La cantidad de ceros " + contCeros +  "<br>" +
-    "d) El promedio de todos los números positivos ingresados " + PromedioPos + "<br>" +
+    "d) El promedio de todos los números positivos ingresados " + PromedioPos.toFixed(2) + "<br>" +
     "e)La suma de todos los números negativos " + negativo  + "<br>"+
     "f)El número y la letra del máximo es " + numeroMax + letraMax + ", y el minimo " + numeroMin + letraMin );
 }
