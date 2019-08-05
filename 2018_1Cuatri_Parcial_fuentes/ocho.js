@@ -31,8 +31,12 @@ function mostrar()
         {
             respuesta= prompt("Error, por favor re-ingrese si o no..")
         }
-    
-        if (numero % 2== 0)
+        
+        if(numero == 0)
+        {
+            contCeros++;
+        }
+        else if (numero % 2== 0)
         {
             contPar++;
         }
@@ -49,10 +53,7 @@ function mostrar()
         {
             negativo += numero;
         }
-        else 
-        {
-            contCeros++;
-        }
+        
         
         if(numero > numeroMax || flag ==0)
         {
@@ -70,7 +71,6 @@ function mostrar()
 
         
     }while(respuesta == "si");
-    
     PromedioPos = positivo / contPos;
     document.write("a) La cantidad de números pares es " + contPar + "<br>" +
     "b) La cantidad de números impares " + contImpar + "<br>" +
